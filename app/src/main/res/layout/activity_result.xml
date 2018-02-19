@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nissi.lottoalrime.ResultActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <EditText
+        android:id="@+id/editTextTurn"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="회차"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:onClick="onClickResult"
+        android:text="회차 당첨번호 가져오기"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="?attr/colorButtonNormal"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResult">
+
+        <TextView
+            android:id="@+id/textViewNum1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewNum7"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="45"
+            android:textColor="@android:color/holo_red_light" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonResultCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:onClick="onClickResultCheck"
+        android:text="당첨결과 확인하기"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="당첨된 번호는 00,00,00입니다."
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResultCheck" />
+</android.support.constraint.ConstraintLayout>

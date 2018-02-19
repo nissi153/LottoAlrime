@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.nissi.lottoalrime.RegisterActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/textViewTitleManual2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="로또번호 입력"
+        android:textColor="@android:color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="384dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="35dp"
+        android:background="?attr/colorButtonNormal"
+        android:orientation="horizontal"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitleManual2">
+
+        <EditText
+            android:id="@+id/editTextNum1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNum2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNum3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNum4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNum5"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+        <EditText
+            android:id="@+id/editTextNum6"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:ems="2"
+            android:gravity="center"
+            android:inputType="number"
+            android:text="45"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="onClickSave"
+        android:text="저장하기"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+    <Button
+        android:id="@+id/buttonLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="onClickLoad"
+        android:text="저장된 번호 가져오기"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSave"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/editTextTurn"
+        android:layout_width="66dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="회차"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
